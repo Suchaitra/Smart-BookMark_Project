@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmark List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>All Bookmarks</h1>
+
+    <a href="{% url 'add_bookmark' %}" class="add-btn">Add New Bookmark</a>
+
+    {% if bookmarks %}
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>URL</th>
+                <th>Actions</th>
+            </tr>
+
+            {% for b in bookmarks %}
+            <tr>
+                <td>{{ b.title }}</td>
+                <td>
+                    <a href="{{ b.url }}" target="_blank">
+                        Visit
+                    </a>
+                </td>
+                <td class="actions">
+                    <a href="{% url 'update_bookmark' b.id %}">Edit</a>
+                    <a href="{% url 'delete_bookmark' b.id %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No bookmarks available.</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

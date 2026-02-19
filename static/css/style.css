@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5ede0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 75%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fffaf5;
+    padding: 40px 45px;
+    border-radius: 18px;
+    border-top: 5px solid #a0522d;
+    box-shadow: 0 8px 30px rgba(139, 90, 43, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #6b3f1f;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-bottom: 2px dashed #e8d5bc;
+}
+
+a {
+    text-decoration: none;
+    color: #a0522d;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+a:hover { color: #7a3b1e; }
+
+button, .add-btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff8f0;
+    background: #a0522d;
+    box-shadow: 0 4px 12px rgba(160, 82, 45, 0.3);
+    transition: all 0.25s;
+}
+
+button:hover, .add-btn:hover {
+    background: #7a3b1e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(160, 82, 45, 0.4);
+}
+
+input {
+    width: 100%;
+    padding: 11px 14px;
+    margin: 6px 0 18px;
+    border-radius: 8px;
+    border: 1.5px solid #d4a97a;
+    background: #fdf6ee;
+    color: #4a2e1a;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.25s;
+}
+
+input:focus {
+    border-color: #a0522d;
+    background: #fff8f0;
+    box-shadow: 0 0 0 4px rgba(160, 82, 45, 0.12);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(139, 90, 43, 0.1);
+}
+
+th {
+    background: #a0522d;
+    color: #fff8f0;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #edddc8;
+    color: #4a2e1a;
+    transition: background 0.2s;
+}
+
+tr:nth-child(even) td { background: #fdf0e3; }
+tr:hover td           { background: #fce8d2; }
+tr:last-child td      { border-bottom: none; }
+
+.actions a {
+    margin-right: 10px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: #f5e6d3;
+    border: 1px solid #d4a97a;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.actions a:hover {
+    background: #a0522d;
+    color: #fff8f0;
+    border-color: #a0522d;
+}
+
+.add-btn {
+    display: inline-flex;
+    margin-bottom: 22px;
+}
