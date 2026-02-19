@@ -25,9 +25,9 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'django-insecure-c^trty^u&^v-%ip_a0t1g#&hexfac*j0_ms5bj6j&()kfhwkpv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['smart-bookmark-project.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
