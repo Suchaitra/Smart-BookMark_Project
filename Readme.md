@@ -83,3 +83,6 @@ py manage.py runserver
 📌 Samples of Project :
   In folder Assests.
 
+
+LIVE DEPLOYMENT LINK :
+      https://smart-bookmark-project.onrender.com/
